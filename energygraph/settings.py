@@ -16,10 +16,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'energy',                # Or path to database file if using sqlite3.
-        'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'NAME': 'heroku_909b272d6c3b4e8',      # Or path to database file if using sqlite3.
+        'USER': 'bdd6eba73907e0',              # Not used with sqlite3.
+        'PASSWORD': 'edc8a3c0',                # Not used with sqlite3.
+        'HOST': 'us-cdbr-east-03.cleardb.com', # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
