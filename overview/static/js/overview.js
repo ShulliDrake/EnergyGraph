@@ -109,7 +109,7 @@ NL.models.EnergyModel = Backbone.Model.extend({
     },
 
     getData: function(month, year) {
-
+	$("#loading").show();
 	var self = this;
 	this.fetch({
 	    data:{"month":month, "year":year},
@@ -133,7 +133,11 @@ NL.models.EnergyModel = Backbone.Model.extend({
 		self.set({pointInterval:response['point_interval']});
 		self.set({tooltipLabelFormat:response['tooltip_format']});
 		self.set({graphData:resultArray});
-
+		$("#loading").hide();
+	    },
+	    error: function() {
+		//TODO
+		$("#loading").hide();
 	    }
 	});
     },

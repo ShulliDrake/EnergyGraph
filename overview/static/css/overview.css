@@ -40,3 +40,12 @@
     background-color:#1589FF;
     margin:10px 10px 10px 5px;
 }
+
+#loading {
+    display:none;
+    position: absolute;
+    top: 0;
+    height: 470px;
+    width: 100%;
+    background:url('/static/img/ajax-loader.gif') no-repeat center;
+}
